@@ -1,0 +1,90 @@
+/*properties the entire body has */
+body{
+    background-image: url(nibg.png);
+    background-size: cover;
+}
+/*every section has these properties as the base*/
+section{
+    font-family:cursive;
+    display:flex;
+    justify-self: center;
+    flex-wrap:wrap;
+    max-width:1600px;
+    max-height:1000000000px;
+}
+#gamebuttons{
+    justify-content:center;
+}
+/*these are specific properties that apply to the header bar*/
+#nav{
+    background-color:rgb(140, 9, 9);
+    margin-top:0px;
+    display:flex;
+    max-width:2400px;
+    justify-self:auto;
+    border-color:black;
+    border-style:solid;
+    border-width: 5px;
+    border-radius:10px;
+    padding:10px;
+}
+#navtext{
+    font-size:60px;
+    text-align:center;
+    padding-top:20px;
+    padding-left:360px;
+    color:white;
+}
+/*properties of links*/
+a{
+    color:black;
+}
+/*embedded properties*/
+section#embedded{
+    background-color:rgba(0,0,0,0);
+    border-color:rgba(0,0,0,0);
+    border-style:solid;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0);
+    max-width:2400px;
+}
+/*button properties*/
+button{
+    background-color:white;
+    padding:8px;
+    margin:10px;
+    border-radius:7px;
+    border-width: 0px;
+    width:184px;
+    font-size:120%;
+    transition: all 0.3s ease; 
+}
+/* base link properties*/
+a{
+    font-family:cursive;
+    text-decoration:none;
+}
+/* animation for buttons */
+button:hover {
+  background-color: #912426;
+  box-shadow: 0 0 10px #912426, 0 0 20px #912426;
+  transform: scale(1.1); 
+}
+button a:hover{
+    color:white;
+}
+/*
+section{
+    font-family:cursive;
+    background-color:white;
+    border-color:black;
+    border-style:solid;
+    border-width: 5px;
+    border-radius:10px;
+    padding:10px;
+    margin-top:30px;
+    color:black;
+    box-shadow: 0px 4px 6px rgb(0, 0, 0);
+    justify-self:center;
+    max-width:800px;
+    font-size:110%
+}*/

@@ -1,7 +1,8 @@
 /*properties the entire body has 
 (mainly background images, etc)*/
 body{
-    background-image: url(background1.png);
+    background-image: url(baseimages/nibg.png);
+    background-size: cover;
 }
 /*every section has these properties as the base*/
 section{
@@ -42,6 +43,7 @@ section#welcome{
 a{
     color:black;
 }
+/*embedded properties*/
 section#embedded{
     background-color:rgba(0,0,0,0);
     border-color:rgba(0,0,0,0);
