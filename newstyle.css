@@ -12,6 +12,20 @@ section{
     max-width:1600px;
     max-height:1000000000px;
 }
+/*text sections*/
+#texts{
+    background-color:rgb(140, 9, 9);
+    color:white;
+    margin-top:10px;
+    width:800px;
+    justify-content: center;
+    border-color:black;
+    border-style:solid;
+    border-width: 5px;
+    border-radius:10px;
+    font-size:125%;
+    padding:2px;
+}
 #gamebuttons{
     justify-content:center;
 }
@@ -69,22 +83,3 @@ button:hover {
   box-shadow: 0 0 10px #912426, 0 0 20px #912426;
   transform: scale(1.1); 
 }
-button a:hover{
-    color:white;
-}
-/*
-section{
-    font-family:cursive;
-    background-color:white;
-    border-color:black;
-    border-style:solid;
-    border-width: 5px;
-    border-radius:10px;
-    padding:10px;
-    margin-top:30px;
-    color:black;
-    box-shadow: 0px 4px 6px rgb(0, 0, 0);
-    justify-self:center;
-    max-width:800px;
-    font-size:110%
-}*/
