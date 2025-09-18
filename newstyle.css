@@ -29,6 +29,12 @@ section{
 #gamebuttons{
     justify-content:center;
 }
+#newgamebuttons{
+    justify-content:center;
+}
+#spotlightgamebuttons{
+    justify-content:center;
+}
 /*these are specific properties that apply to the header bar*/
 #nav{
     background-color:rgb(140, 9, 9);
