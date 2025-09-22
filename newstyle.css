@@ -94,8 +94,19 @@ a{
 #worldshardestgame2button p{
     margin:8px;
 }
+/* change certain texts*/
+#specialskinstext{
+    font-size:80%;
+}
+/* these are properties for the minecraft skin section */
+#minecraftskins{
+    justify-content: center;
+}
 #skindownloadbutton{
-    width:200px;
+    width:220px;
+}
+#requestform{
+    margin:10px;
 }
 /* animations */
 button:hover{
