@@ -14,6 +14,8 @@ section{
 }
 /*text sections*/
 #texts{
+    display:table;
+    text-align:center;
     background-color:rgb(140, 9, 9);
     color:white;
     margin-top:10px;
@@ -92,8 +94,11 @@ a{
 #worldshardestgame2button p{
     margin:8px;
 }
-/* animation for buttons */
-button:hover {
+#skindownloadbutton{
+    width:200px;
+}
+/* animations */
+button:hover{
   background-color: #912426;
   box-shadow: 0 0 10px #912426, 0 0 20px #912426;
   transform: scale(1.1); 
