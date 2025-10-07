@@ -1,6 +1,6 @@
 /*properties the entire body has */
 body{
-    background-image: url(nibg.png);
+    background-image: url(uhub3background.png);
     background-size: cover;
 }
 /*every section has these properties as the base*/
@@ -28,15 +28,9 @@ section{
     font-size:125%;
     padding:2px;
 }
-/*align the buttons*/
-#gamebuttons{
-    justify-content:center;
-}
-#newgamebuttons{
-    justify-content:center;
-}
-#spotlightgamebuttons{
-    justify-content:center;
+/*properties of links*/
+a{
+    color:black;
 }
 /*these are specific properties that apply to the header bar*/
 #nav{
@@ -55,12 +49,13 @@ section{
     font-size:60px;
     text-align:center;
     padding-top:20px;
-    padding-left:360px;
+    padding-left:110px;
     color:white;
 }
-/*properties of links*/
-a{
-    color:black;
+#navtext a{
+    color:white;
+    font-size:24px;
+    justify-content:center;
 }
 /*embedded properties*/
 section#embedded{
@@ -88,10 +83,7 @@ a{
     text-decoration:none;
 }
 /*keep certain buttons unified with the rest*/
-#worldshardestgamebutton p{
-    margin:8px;
-}
-#worldshardestgame2button p{
+#specialgamebutton p{
     margin:8px;
 }
 /* change certain texts*/
@@ -113,4 +105,14 @@ button:hover{
   background-color: #912426;
   box-shadow: 0 0 10px #912426, 0 0 20px #912426;
   transform: scale(1.1); 
+}
+/*align the buttons*/
+#gamebuttons{
+    justify-content:center;
+}
+#newgamebuttons{
+    justify-content:center;
+}
+#spotlightgamebuttons{
+    justify-content:center;
 }
