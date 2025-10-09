@@ -49,7 +49,7 @@ a{
     font-size:60px;
     text-align:center;
     padding-top:20px;
-    padding-left:110px;
+    padding-left:30px;
     color:white;
 }
 #navtext a{
@@ -97,8 +97,11 @@ a{
 #skindownloadbutton{
     width:220px;
 }
-/* request form properties*/
+/* form properties*/
 #requestform{
+    margin:10px;
+}
+#bugreportform{
     margin:10px;
 }
 /* animations */
