@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "tvt",
+        "1": "tvt1",
+        "2": "tvt2"
+      },
+      "name": "default"
+    }
+  }
+}

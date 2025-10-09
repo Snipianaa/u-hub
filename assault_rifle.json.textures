@@ -1,0 +1,14 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "ar1",
+        "1": "ar2",
+        "2": "ar3",
+        "3": "ar4",
+        "4": "ar5"
+      },
+      "name": "default"
+    }
+  }
+}

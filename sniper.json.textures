@@ -1,0 +1,24 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "11": "sniper12",
+        "12": "sniper13",
+        "13": "sniper14",
+        "14": "sniper15",
+        "0": "sniper1",
+        "1": "sniper2",
+        "2": "sniper3",
+        "3": "sniper4",
+        "4": "sniper5",
+        "5": "sniper6",
+        "6": "sniper7",
+        "7": "sniper8",
+        "8": "sniper9",
+        "9": "sniper10",
+        "10": "sniper11"
+      },
+      "name": "default"
+    }
+  }
+}

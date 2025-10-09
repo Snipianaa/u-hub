@@ -1,0 +1,13 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "smg1",
+        "1": "smg2",
+        "2": "smg3",
+        "3": "smg4"
+      },
+      "name": "default"
+    }
+  }
+}

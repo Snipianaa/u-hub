@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "shot1",
+        "1": "shot2",
+        "2": "shot3"
+      },
+      "name": "default"
+    }
+  }
+}
