@@ -43,7 +43,7 @@
     </section>
     <section id="minecraftskins">
         <div id="armodel">
-            <a href="assault_rifle.bbmodel" href="assault_rifle.json" download>
+            <a href="assault_rifle.bbmodel" download>
                 <button id="skindownloadbutton">
                     <div id="skin">
                         <img width="184" height="184" src="arimg.png">
@@ -54,6 +54,25 @@
                 </button>
             </a>
         </div>
+        <script>
+            document.getElementById('skindownloadbutton').addEventListener('click', function() {
+                const filesToDownload = [
+                    { url: 'assault_rifle.json', filename: 'assault_rifle.json' },
+                    { url: 'assault_rifle.json.textures', filename: 'assault_rifle.json.textures' },
+                ];
+
+                filesToDownload.forEach((file, index) => {
+                    setTimeout(() => {
+                        const link = document.createElement('a');
+                        link.href = file.url;
+                        link.download = file.filename;
+                        document.body.appendChild(link); // Append to body is often necessary for click() to work reliably
+                        link.click();
+                        document.body.removeChild(link); // Clean up the dynamically created element
+                    }, index * 200); 
+                });
+            });
+        </script>
         <div id="wattsonskin">
             <a href="layeredwattsonskin.png" download>
                 <button id="skindownloadbutton">
