@@ -12,10 +12,9 @@
             <a href="index.html"><img src="u-hubicon.png"></a>
         </div>
         <header id="navtext">
-            <a id="navlinks" href="index.html#spotlightgamebuttons">Spotlight</a>
-            <a id="navlinks" href="index.html#newgamebuttons">New Games</a>
-            <a id="navlinks" href="index.html#gamebuttons">All Games</a>
+            <a id="navlinks" href="index.html">Games</a>
             <a id="navlinks" href="minecraftskins.html">Minecraft Skins</a>
+            <a id="navlinks" href="models.html">Models</a>
             <a id="navlinks" href="requests.html">Requests</a>
             <a id="navlinks" href="bug-report.html">Bug Reports</a>
         </header>
@@ -41,62 +40,316 @@
             (Click on the button to download the model)
         </p>
     </section>
-    <section id="minecraftskins">
+    <section id="modelssection">
         <div id="armodel">
             <a href="assault_rifle.bbmodel" download>
-                <button id="skindownloadbutton">
-                    <div id="skin">
-                        <img width="184" height="184" src="arimg.png">
-                    </div>
-                    <p>
-                        AR
-                    </p>
-                </button>
+                <div id="maintaincss">
+                    <button id="ardownloadbutton">
+                        <div id="skin">
+                            <img width="184" height="184" src="arimg.png">
+                        </div>
+                        <p>
+                            AR
+                        </p>
+                    </button>
+                </div>
             </a>
         </div>
-        <script>
-            document.getElementById('skindownloadbutton').addEventListener('click', function() {
-                const filesToDownload = [
-                    { url: 'assault_rifle.json', filename: 'assault_rifle.json' },
-                    { url: 'assault_rifle.json.textures', filename: 'assault_rifle.json.textures' },
-                ];
-
-                filesToDownload.forEach((file, index) => {
-                    setTimeout(() => {
-                        const link = document.createElement('a');
-                        link.href = file.url;
-                        link.download = file.filename;
-                        document.body.appendChild(link); // Append to body is often necessary for click() to work reliably
-                        link.click();
-                        document.body.removeChild(link); // Clean up the dynamically created element
-                    }, index * 200); 
-                });
-            });
-        </script>
-        <div id="wattsonskin">
-            <a href="layeredwattsonskin.png" download>
-                <button id="skindownloadbutton">
-                    <div id="skin">
-                        <img width="184" height="184" src="watta.png">
-                    </div>
-                    <p>
-                        Wattson
-                    </p>
-                </button>
+        <div id="katesifymodel">
+            <a href="katesifymodelver.bbmodel" download>
+                <div id="maintaincss">
+                    <button id="katesifydownloadbutton">
+                        <div id="skin">
+                            <img width="184" height="184" src="katesifymodelver.png">
+                        </div>
+                        <p>
+                            Katesify (qual. version)
+                        </p>
+                    </button>
+                </div>
             </a>
         </div>
-        <div id="wattsonnohoodskin">
-            <a href="layeredwattsonskin(no_hood).png" download>
-                <button id="skindownloadbutton">
-                    <div id="skin">
-                        <img width="184" height="184" src="wattb.png">
-                    </div>
-                    <p>
-                        Wattson (No Hood)
-                    </p>
-                </button>
+        <div id="microwavemodel">
+            <a href="microwave2.bbmodel" download>
+                <div id="maintaincss">
+                    <button id="microwavedownloadbutton">
+                        <div id="skin">
+                            <img width="184" height="184" src="microwaveimg.png">
+                        </div>
+                        <p>
+                            Microwave
+                        </p>
+                    </button>
+                </div>
+            </a>
+        </div>
+        <div id="pistolmodel">
+            <a href="pistol.bbmodel" download>
+                <div id="maintaincss">
+                    <button id="pistoldownloadbutton">
+                        <div id="skin">
+                            <img width="184" height="184" src="pstlimg.png">
+                        </div>
+                        <p>
+                            Pistol
+                        </p>
+                    </button>
+                </div>
+            </a>
+        </div>
+        <div id="shotgunmodel">
+            <a href="shotgun.bbmodel" download>
+                <div id="maintaincss">
+                    <button id="shotgundownloadbutton">
+                        <div id="skin">
+                            <img width="184" height="184" src="shtimg.png">
+                        </div>
+                        <p>
+                            Shotgun
+                        </p>
+                    </button>
+                </div>
+            </a>
+        </div>
+        <div id="smgmodel">
+            <a href="smg.bbmodel" download>
+                <div id="maintaincss">
+                    <button id="smgdownloadbutton">
+                        <div id="skin">
+                            <img width="184" height="184" src="smgimg.png">
+                        </div>
+                        <p>
+                            SMG
+                        </p>
+                    </button>
+                </div>
+            </a>
+        </div>
+        <div id="snipermodel">
+            <a href="sniper.bbmodel" download>
+                <div id="maintaincss">
+                    <button id="sniperdownloadbutton">
+                        <div id="skin">
+                            <img width="184" height="184" src="sniperimg.png">
+                        </div>
+                        <p>
+                            Sniper
+                        </p>
+                    </button>
+                </div>
+            </a>
+        </div>
+        <div id="tvmodel">
+            <a href="tv.bbmodel" download>
+                <div id="maintaincss">
+                    <button id="tvdownloadbutton">
+                        <div id="skin">
+                            <img width="184" height="184" src="tvimg.png">
+                        </div>
+                        <p>
+                            TV
+                        </p>
+                    </button>
+                </div>
+            </a>
+        </div>
+        <div id="xboxmodel">
+            <a href="xbox.bbmodel" download>
+                <div id="maintaincss">
+                    <button id="xboxdownloadbutton">
+                        <div id="skin">
+                            <img width="184" height="184" src="xboximg.png">
+                        </div>
+                        <p>
+                            Xbox
+                        </p>
+                    </button>
+                </div>
             </a>
         </div>
     </section>
+    <!--scripts for download-->
+    <script>
+        document.getElementById('ardownloadbutton').addEventListener('click', function() {
+            const filesToDownload = [
+                { url: 'assault_rifle.json', filename: 'assault_rifle.json' },
+                { url: 'assault_rifle.json.textures', filename: 'assault_rifle.json.textures' },
+                { url: 'ar1.png', filename: 'ar1.png' },
+                { url: 'ar2.png', filename: 'ar2.png' },
+                { url: 'ar3.png', filename: 'ar3.png' },
+                { url: 'ar4.png', filename: 'ar4.png' },
+                { url: 'ar5.png', filename: 'ar5.png' },
+            ];
+            filesToDownload.forEach((file, index) => {
+                setTimeout(() => {
+                    const link = document.createElement('a');
+                    link.href = file.url;
+                    link.download = file.filename;
+                    document.body.appendChild(link); // Append to body is often necessary for click() to work reliably
+                    link.click();
+                    document.body.removeChild(link); // Clean up the dynamically created element
+                }, index * 200); 
+            });
+        });
+        document.getElementById('katesifydownloadbutton').addEventListener('click', function() {
+            const filesToDownload = [
+                { url: 'katesifymodelver.json', filename: 'katesifymodelver.json' },
+                { url: 'katesifymodelver.json.textures', filename: 'katesifymodelver.json.textures' },
+                { url: 'katesifymodeltexture.png', filename: 'katesifymodeltexture.png' },
+            ];
+            filesToDownload.forEach((file, index) => {
+                setTimeout(() => {
+                    const link = document.createElement('a');
+                    link.href = file.url;
+                    link.download = file.filename;
+                    document.body.appendChild(link); // Append to body is often necessary for click() to work reliably
+                    link.click();
+                    document.body.removeChild(link); // Clean up the dynamically created element
+                }, index * 200); 
+            });
+        });
+        document.getElementById('microwavedownloadbutton').addEventListener('click', function() {
+            const filesToDownload = [
+                { url: 'microwave2.json', filename: 'microwave2.json' },
+                { url: 'microwave2.json.textures', filename: 'microwave2.json.textures' },
+                { url: 'mic.png', filename: 'mic.png' },
+            ];
+            filesToDownload.forEach((file, index) => {
+                setTimeout(() => {
+                    const link = document.createElement('a');
+                    link.href = file.url;
+                    link.download = file.filename;
+                    document.body.appendChild(link); 
+                    link.click();
+                    document.body.removeChild(link); 
+                }, index * 200); 
+            });
+        });
+        document.getElementById('pistoldownloadbutton').addEventListener('click', function() {
+            const filesToDownload = [
+                { url: 'pistol.json', filename: 'pistol.json' },
+                { url: 'pistol.json.textures', filename: 'pistol.json.textures' },
+                { url: 'p1.png', filename: 'p1.png' },
+                { url: 'p2.png', filename: 'p2.png' },
+                { url: 'p3.png', filename: 'p3.png' },
+            ];
+            filesToDownload.forEach((file, index) => {
+                setTimeout(() => {
+                    const link = document.createElement('a');
+                    link.href = file.url;
+                    link.download = file.filename;
+                    document.body.appendChild(link); 
+                    link.click();
+                    document.body.removeChild(link); 
+                }, index * 200); 
+            });
+        });
+        document.getElementById('shotgundownloadbutton').addEventListener('click', function() {
+            const filesToDownload = [
+                { url: 'shotgun.json', filename: 'shotgun.json' },
+                { url: 'shotgun.json.textures', filename: 'shotgun.json.textures' },
+                { url: 'shot1.png', filename: 'shot1.png' },
+                { url: 'shot2.png', filename: 'shot2.png' },
+                { url: 'shot3.png', filename: 'shot3.png' },
+            ];
+            filesToDownload.forEach((file, index) => {
+                setTimeout(() => {
+                    const link = document.createElement('a');
+                    link.href = file.url;
+                    link.download = file.filename;
+                    document.body.appendChild(link); 
+                    link.click();
+                    document.body.removeChild(link); 
+                }, index * 200); 
+            });
+        });
+        document.getElementById('smgdownloadbutton').addEventListener('click', function() {
+            const filesToDownload = [
+                { url: 'smg.json', filename: 'smg.json' },
+                { url: 'smg.json.textures', filename: 'smg.json.textures' },
+                { url: 'smg1.png', filename: 'smg1.png' },
+                { url: 'smg2.png', filename: 'smg2.png' },
+                { url: 'smg3.png', filename: 'smg3.png' },
+                { url: 'smg4.png', filename: 'smg4.png' },
+            ];
+            filesToDownload.forEach((file, index) => {
+                setTimeout(() => {
+                    const link = document.createElement('a');
+                    link.href = file.url;
+                    link.download = file.filename;
+                    document.body.appendChild(link); 
+                    link.click();
+                    document.body.removeChild(link); 
+                }, index * 200); 
+            });
+        });
+        document.getElementById('sniperdownloadbutton').addEventListener('click', function() {
+            const filesToDownload = [
+                { url: 'sniper.json', filename: 'sniper.json' },
+                { url: 'sniper.json.textures', filename: 'sniper.json.textures' },
+                { url: 'sniper1.png', filename: 'sniper1.png' },
+                { url: 'sniper2.png', filename: 'sniper2.png' },
+                { url: 'sniper3.png', filename: 'sniper3.png' },
+                { url: 'sniper4.png', filename: 'sniper4.png' },
+                { url: 'sniper5.png', filename: 'sniper5.png' },
+                { url: 'sniper6.png', filename: 'sniper6.png' },
+                { url: 'sniper7.png', filename: 'sniper7.png' },
+                { url: 'sniper8.png', filename: 'sniper8.png' },
+                { url: 'sniper9.png', filename: 'sniper9.png' },
+                { url: 'sniper10.png', filename: 'sniper10.png' },
+                { url: 'sniper11.png', filename: 'sniper11.png' },
+                { url: 'sniper12.png', filename: 'sniper12.png' },
+                { url: 'sniper13.png', filename: 'sniper13.png' },
+                { url: 'sniper14.png', filename: 'sniper14.png' },
+                { url: 'sniper15.png', filename: 'sniper15.png' },
+            ];
+            filesToDownload.forEach((file, index) => {
+                setTimeout(() => {
+                    const link = document.createElement('a');
+                    link.href = file.url;
+                    link.download = file.filename;
+                    document.body.appendChild(link); 
+                    link.click();
+                    document.body.removeChild(link); 
+                }, index * 200); 
+            });
+        });
+        document.getElementById('tvdownloadbutton').addEventListener('click', function() {
+            const filesToDownload = [
+                { url: 'tv.json', filename: 'tv.json' },
+                { url: 'tv.json.textures', filename: 'tv.json.textures' },
+                { url: 'tvt.png', filename: 'tvt.png' },
+                { url: 'tvt1.png', filename: 'tvt1.png' },
+                { url: 'tvt2.png', filename: 'tvt2.png' },
+            ];
+            filesToDownload.forEach((file, index) => {
+                setTimeout(() => {
+                    const link = document.createElement('a');
+                    link.href = file.url;
+                    link.download = file.filename;
+                    document.body.appendChild(link); 
+                    link.click();
+                    document.body.removeChild(link); 
+                }, index * 200); 
+            });
+        });
+        document.getElementById('xboxdownloadbutton').addEventListener('click', function() {
+            const filesToDownload = [
+                { url: 'xbox.json', filename: 'xbox.json' },
+                { url: 'xbox.json.textures', filename: 'xbox.json.textures' },
+                { url: 'x.png', filename: 'x.png' },
+            ];
+            filesToDownload.forEach((file, index) => {
+                setTimeout(() => {
+                    const link = document.createElement('a');
+                    link.href = file.url;
+                    link.download = file.filename;
+                    document.body.appendChild(link); 
+                    link.click();
+                    document.body.removeChild(link); 
+                }, index * 200); 
+            });
+        });
+    </script>
 </body>
 </html>
