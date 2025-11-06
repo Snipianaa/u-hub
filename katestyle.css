@@ -1,0 +1,59 @@
+body{
+    background-image: url(kate.jpg);
+}
+section{
+    font-family:cursive;
+    display:flex;
+    justify-self: center;
+    flex-wrap:wrap;
+    max-width:1600px;
+    max-height:1000000000px;
+}
+#texts{
+    display:table;
+    text-align:center;
+    background-color:rgba(99, 8, 8, 1);
+    color:white;
+    margin-top:10px;
+    width:800px;
+    justify-content: center;
+    border-color:black;
+    border-style:solid;
+    border-width: 5px;
+    border-radius:10px;
+    font-size:125%;
+    padding:2px;
+}
+#nav{
+    background-color:rgba(99, 8, 8, 1);
+    margin-top:0px;
+    display:flex;
+    max-width:2400px;
+    justify-self:auto;
+    border-color:black;
+    border-style:solid;
+    border-width: 5px;
+    border-radius:10px;
+    padding:10px;
+}
+#navtext{
+    font-size:60px;
+    text-align:center;
+    padding-top:0px;
+    padding-left:20%;
+    color:white;
+}
+#navtext a{
+    color:white;
+    font-size:24px;
+    justify-content:center;
+    transition: all 0.3s ease;
+}
+#navtext a:hover{
+    background-color: rgba(145, 45, 45, 1);
+    box-shadow: 0 0 10px rgba(145, 45, 45, 1), 0 0 20px rgba(145, 45, 45, 1);
+    transform: scale(1.5); 
+}
+#embedded{
+    margin-top:3%
+}
