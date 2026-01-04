@@ -110,6 +110,10 @@ button{
 #navbugreportbutton{
     width:160px;
 }
+/* socials button properties */
+#socialsyoutubebutton{
+    width:240px;
+}
 /* base link properties*/
 a{
     font-family:cursive;
