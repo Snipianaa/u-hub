@@ -57,6 +57,9 @@
             Each download contains a .bbmodel file, a .json file, and a .json.textures file, as well as all the textures. Use the .json.textures file to map the textures correctly, if they aren't mapped already 
         </p>
         <p id="specialskinstext">
+            Please note that newer models do not include a .json.textures file, as there is only one texture to be used on the model, meaning it is a lot simpler to map the texture back onto the model.
+        </p>
+        <p id="specialskinstext">
             (Click on the button to download the model)
         </p>
     </section>
@@ -70,6 +73,20 @@
                         </div>
                         <p>
                             AR
+                        </p>
+                    </button>
+                </div>
+            </a>
+        </div>
+        <div id="flatlinemodel">
+            <a href="flatlinte.bbmodel" download>
+                <div id="maintaincss">
+                    <button id="flatlinedownloadbutton">
+                        <div id="skin">
+                            <img width="184" height="184" src="flatline.png">
+                        </div>
+                        <p>
+                            Flatline
                         </p>
                     </button>
                 </div>
@@ -173,6 +190,20 @@
                 </div>
             </a>
         </div>
+        <div id="voltmodel">
+            <a href="volt-fixed.bbmodel" download>
+                <div id="maintaincss">
+                    <button id="voltdownloadbutton">
+                        <div id="skin">
+                            <img width="184" height="184" src="volt.png">
+                        </div>
+                        <p>
+                            Volt
+                        </p>
+                    </button>
+                </div>
+            </a>
+        </div>
         <div id="xboxmodel">
             <a href="xbox.bbmodel" download>
                 <div id="maintaincss">
@@ -199,6 +230,22 @@
                 { url: 'ar3.png', filename: 'ar3.png' },
                 { url: 'ar4.png', filename: 'ar4.png' },
                 { url: 'ar5.png', filename: 'ar5.png' },
+            ];
+            filesToDownload.forEach((file, index) => {
+                setTimeout(() => {
+                    const link = document.createElement('a');
+                    link.href = file.url;
+                    link.download = file.filename;
+                    document.body.appendChild(link); // Append to body is often necessary for click() to work reliably
+                    link.click();
+                    document.body.removeChild(link); // Clean up the dynamically created element
+                }, index * 200); 
+            });
+        });
+        document.getElementById('flatlinedownloadbutton').addEventListener('click', function() {
+            const filesToDownload = [
+                { url: 'flatlinte.json', filename: 'flatlinte.json' },
+                { url: 'flatlinetext.png', filename: 'flatlinetext.png' },
             ];
             filesToDownload.forEach((file, index) => {
                 setTimeout(() => {
@@ -350,6 +397,22 @@
                     document.body.appendChild(link); 
                     link.click();
                     document.body.removeChild(link); 
+                }, index * 200); 
+            });
+        });
+        document.getElementById('voltdownloadbutton').addEventListener('click', function() {
+            const filesToDownload = [
+                { url: 'volt-fixed.json', filename: 'volt-fixed.json' },
+                { url: 'volt-fized-text.png', filename: 'volt-fized-text.png' },
+            ];
+            filesToDownload.forEach((file, index) => {
+                setTimeout(() => {
+                    const link = document.createElement('a');
+                    link.href = file.url;
+                    link.download = file.filename;
+                    document.body.appendChild(link); // Append to body is often necessary for click() to work reliably
+                    link.click();
+                    document.body.removeChild(link); // Clean up the dynamically created element
                 }, index * 200); 
             });
         });
