@@ -13,7 +13,7 @@ section{
     justify-self: center;
     flex-wrap:wrap;
     max-width:1600px;
-    max-height:1000000000px;
+    max-height:15000%;
 }
 /*text sections*/
 #texts{

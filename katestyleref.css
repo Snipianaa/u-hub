@@ -1,0 +1,164 @@
+body{
+    background-image: url(kate.jpg);
+}
+#katebodynav{
+    background:none;
+}
+section{
+    font-family:cursive;
+    display:flex;
+    justify-self: center;
+    flex-wrap:wrap;
+    max-width:1600px;
+    max-height:1000000000px;
+}
+#texts{
+    display:table;
+    text-align:center;
+    background-color:rgba(99, 8, 8, 1);
+    color:white;
+    margin-top:10px;
+    width:800px;
+    justify-content: center;
+    border-color:black;
+    border-style:solid;
+    border-width: 5px;
+    border-radius:10px;
+    font-size:125%;
+    padding:2px;
+}
+#nav{
+    background-color:rgba(99, 8, 8, 1);
+    margin-top:0px;
+    display:flex;
+    max-width:2400px;
+    justify-self:auto;
+    border-color:black;
+    border-style:solid;
+    border-width: 5px;
+    border-radius:10px;
+    padding:10px;
+}
+#navtext{
+    font-size:60px;
+    text-align:center;
+    padding-top:0px;
+    padding-left:20%;
+    color:white;
+}
+#navtext a{
+    color:white;
+    font-size:24px;
+    justify-content:center;
+}
+#embedded{
+    margin-top:3%
+}
+/*navigation embed properties*/
+#navembed{
+    width:100%;
+    max-height: fit-content;
+}
+#headertexts{
+    font-size:225%;
+}
+/*properties of links*/
+a{
+    color:black;
+}
+/*these are specific properties that apply to the header bar*/
+#nav{
+    background-color:rgba(99, 8, 8, 1);
+    margin-top:0px;
+    display:flex;
+    max-width:2400px;
+    justify-self:auto;
+    border-color:black;
+    border-style:solid;
+    border-width: 5px;
+    border-radius:10px;
+    padding:10px;
+}
+#navtext{
+    font-size:60px;
+    text-align:center;
+    padding-top:0px;
+    padding-left:7.2%;
+    color:white;
+}
+#navtext a{
+    color:white;
+    font-size:24px;
+    justify-content:center;
+}
+#navimg{
+    transition: all 0.5s ease;
+}
+/*embedded properties*/
+section#embedded{
+    background-color:rgba(0,0,0,0);
+    border-color:rgba(0,0,0,0);
+    border-style:solid;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0);
+    max-width:2400px;
+}
+/*button properties*/
+button{
+    background-color:white;
+    padding:8px;
+    margin:10px;
+    max-height:256px;
+    border-radius:7px;
+    border-width: 0px;
+    width:256px;
+    font-size:110%;
+    transition: all 0.5s ease; 
+}
+/*special button properties*/ 
+#navbutton button{
+    background-color:rgba(99, 8, 8, 1);
+    border-radius:10px;
+    height:64px;
+    padding:0px;
+    max-width:196px;
+    color:white;
+    font-family:cursive;
+    font-size:100%;
+    transition: all 0.5 ease;
+}
+#navvideosbutton{
+    width:112px;
+    margin-left:15rem;
+}
+#navpostsbutton{
+    width:104px;
+}
+#navbugreportbutton{
+    width:160px;
+}
+/* base link properties*/
+a{
+    font-family:cursive;
+    text-decoration:none;
+}
+/* animations */
+button:hover{
+  background-color: rgba(99, 8, 8, 1);
+  box-shadow: 0 0 40px rgba(99, 8, 8, 1), 0 0 20px rgba(99, 8, 8, 1);
+  transform: scale(1.15); 
+}
+#navbutton button:hover{
+    background-color: rgb(54, 5, 5);
+    box-shadow: 0 0 40px rgb(54, 5, 5), 0 0 20px rgb(54, 5, 5);
+    transform: scale(1.2); 
+}
+#navimg:hover{
+    transform: scale(1.2); 
+}
+/*align the buttons*/
+#katesifyvideobuttons{
+    justify-content:center;
+}
+#katesifypostbuttons{
+    justify-content:center;
+}
