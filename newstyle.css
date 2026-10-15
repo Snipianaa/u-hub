@@ -1,7 +1,7 @@
 /*properties the entire body has */
 body{
     background-image: url(uhub3background.png);
-    background-size: cover;
+    background-size:auto;
 }
 #mainnav{
     background:none;
@@ -31,6 +31,10 @@ section{
     font-size:125%;
     padding:2px;
 }
+#pn{
+    text-align:left;
+    margin-left: 1rem;
+}
 #headertexts{
     font-size:225%;
 }
@@ -49,6 +53,14 @@ a{
 #katelinker{
     color:white;
     text-decoration:underline;
+}
+/*properties of the search bar*/
+input{
+    background-color:rgb(90, 9, 9);
+    color:white;
+    border-color: rgb(90, 9, 9);
+    border-radius:0.55rem;
+    margin-bottom: 1rem;
 }
 /*these are specific properties that apply to the header bar*/
 #nav{
